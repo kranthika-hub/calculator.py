@@ -37,6 +37,9 @@ while True:
     if choice == "5":
         print("Exiting calculator...")
         break
+    if choice not in ["1", "2", "3", "4"]:
+    print("Invalid choice. Please select 1–5.")
+    continue
 
     num1 = get_number("Enter first number: ")
     num2 = get_number("Enter second number: ")
